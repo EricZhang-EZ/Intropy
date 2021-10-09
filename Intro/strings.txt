@@ -1,0 +1,40 @@
+APOSTROPHE
+message = 'Hello World'
+message = "Bob's World"
+message = """Bob's World"""
+
+LENGTH
+print(len(message))
+
+NUMBER OF WORD
+print(message[10]) number of word - 1
+print(message[0:5])
+print(message[:5])
+
+LOWEWR, UPPER
+print(message.lower())
+print(message.upper())
+
+COUNT
+print(message.count('Hello'))
+print(message.count('l'))
+
+FIND
+print(message.find('World')) answer = 6  World starts at the 6 index
+print(message.find('Universe')) answer = -1  Universe dosen't exist in 'Hello World'
+
+MESSAGE REPLACEMENT
+new_message = message.replace('World', 'Universe')
+print(new_message)
+message = message.replace('World', 'Universe')
+
+MULTIPLE STRINGS
+greeting = 'Hello'
+name = 'Eric'
+message = f'{greeting}, {name.upper()}. Welcome!'
+print(message)
+
+HELP TERMINAL
+print(dir(message))
+print(help(str))
+print(help(str).upper)

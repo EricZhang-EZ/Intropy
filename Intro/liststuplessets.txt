@@ -1,0 +1,105 @@
+LIST
+LIST
+courses = ['c', 'b', 'n', 'a']
+print(courses)
+print(len(courses))
+
+SEARCH LIST
+print(courses[2])
+print(courses[-2])
+print(courses[1:2])
+
+ADD TO THE LIST
+courses.append('~') add to
+courses.insert(0, '~')
+
+ADDING MULTIPLE VALUES TO THE LIST
+courses_2 = ['i', 't']
+courses.extend(courses_2)
+
+REMOVE FROM THE LIST
+courses.remove('c')
+courses.pop() removes the last value from the list
+
+RETURNING VARIABLES (POPPED)
+courses = ['c', 'b', 'n', 'a']
+
+popped = courses.pop()
+
+print(popped)
+print(courses) 
+
+SORT THE LIST
+courses.reverse()
+courses.sort() sorts in alphbetical order
+num.sort()
+courses.sort(reverse=True)
+num.sort(reverse=True)
+
+sorted_courses = sorted(courses)
+print(sorted_courses) doesn't change the original list
+
+NUMBERS
+print(min(num))
+print(max(num))
+print(sum(num))
+
+INDEX
+ print(courses.index('a'))
+ print('n' in courses)
+
+ for item in courses:
+    print(item)
+
+for index, item in enumerate (courses):  for index, item in enumerate (courses, start=1):
+    print(index, item)
+
+COMMA SEPERATED
+course_str = ', '.join(courses)
+new_list  = course_str.split(', ') reverse the string
+
+TUPLES
+MUTABLE(list)
+list_1 = ['c', 'b', 'n', 'a']
+list_2 = list_1
+
+print(list_1)
+print(list_2)
+
+list_1[0] = 'p'
+
+print(list_1)
+print(list_2)
+
+IMMUTABLE(tuples)
+tuple_1 = ('c', 'b', 'n', 'a')
+tuple_2 = tuple_1
+
+print(tuple_1)
+print(tuple_2)
+
+SET
+NO DUPLICATES
+cs_courses = {'c', 'b', 'n', 'a', 'a'}
+print('a' in cs_courses)
+
+FIND THE DIFFERENCE
+cs_courses = {'c', 'b', 'n', 'a'}
+o_courses = {'o', 'p', 'n', 'a'}
+print(cs_courses.intersection(o_courses))
+print(cs_courses.difference(o_courses))
+print(cs_courses.union(o_courses))
+
+NOTES:
+{} = list 
+() = tuples immustable
+{} = sets doesn't make duplicates
+
+empty_list = []
+empty_list = list()
+
+empty_list = ()
+empty_list = tuple()
+
+empty_list = {} #Not correct it's a dictionary
+empty_list = set()
