@@ -1,0 +1,36 @@
+DICTIONARY
+student = {'name': 'En', 'age': '18', 'couses': ['compsci', 'math']}
+print(student)
+print(student['name'])
+print(student.get('phone'))
+print(student.get('phone', 'found'))
+
+ADD TO THE STRING
+student['phone'] = '888-888-8888'
+
+CHANGING VALUE
+student['name'] = 'Eric'
+
+UPDATING VALUES
+student.update({'name': 'Eric', 'courses': 'Chinese', 'phone': '888-888-8888'})
+
+DELETING VALUES
+del student['courses']
+
+POP
+age = student.pop('age')
+print(age)
+
+INDEX
+print(len(student))
+print(student.keys())
+print(student.values())
+print(student.items()) keys and values 
+
+LOOP THROUGH
+for key in student:
+    print(key)
+for key in student.items(): 
+    print(key) with the brackets
+for key,value in student.items():
+    print(key, value) without the brackets
