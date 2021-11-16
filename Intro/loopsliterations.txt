@@ -1,0 +1,34 @@
+LITERATION
+EX
+nums = [1, 2, 3, 4, 5]
+for num in nums:
+    print(num) 
+
+BREAK STATEMENTS
+for num in nums:
+    if num == 3:
+        break/continue
+    print(num) 
+
+LOOP INSIDE A LOOP
+for num in nums:
+    for letter in 'abc':
+        print(num, letter)
+
+RANGE
+for i in range (1, 11):
+    print(i)
+
+LOOP
+x = 0
+while x < 10:
+    if x == 8:
+        break
+    print(x)
+    x += 1
+
+NEVER ENDING LOOP
+x = 0
+while True:
+    print(x)
+    x += 1
