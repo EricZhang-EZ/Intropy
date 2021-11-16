@@ -1,0 +1,81 @@
+CONDITONALS
+
+KEY WORDS
+Equal ==
+Not Equal !=
+Greater Than >
+Less Than <
+Greater or Equal >=
+Less or Equal <=
+Object Identity 'is'
+and
+or
+not
+
+IF STATEMENTS
+if True:
+    print('conditional was true')
+EX
+language = 'Python'
+if language == 'Python':
+    print('conditional was true')
+
+ ELSE STATEMENTS
+language = 'Java'
+if language == 'Python':
+    print('Language is Python')
+else:
+    print('no match')
+
+ELIF STATEMENTS
+language = 'Java'
+if language == 'Python':
+    print('Language is Python')
+elif language == 'Java':
+    print('Language is Java')
+elif language == 'JavaScript':
+    print('Language is JavaScript')
+else:
+    print('no match')
+
+AND STATEMENTS
+user = 'Admin'
+logged_in = True
+if user == 'Admin' and logged_in:
+    print('loading in...')
+else:
+    print('your password is incorrect') 
+
+OR STATEMENTS only one of the statements needs to be true
+if user == 'Admin' or logged_in:
+    print('loading in...')
+else:
+    print('your password is incorrect')
+
+NOT STATEMENTS
+if not logged_in:
+    print('your password is incorrect')
+else:
+    print('loading in')
+
+DIFFERENCE BETWEEN IS AND ==
+a = [1, 2, 3]
+b = [1, 2, 3]
+print(id(a))
+print(id(b))
+print('a is b')
+
+FALSE VALUES
+false
+none 
+zero of any numeric type
+any empty sequence; EX: '' () []
+any empty maping; EX: {}
+
+EX FLASE VALUES
+condition = any of those above
+if condition:
+    print('Evaluate to True')
+else:
+    print('Evaluate to False')
+
